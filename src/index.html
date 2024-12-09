@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 600px;
+        }
+        .file-manager {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            resize: none;
+        }
+        .file-list {
+            margin-top: 20px;
+        }
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .filename-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .filename-inputs label {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>File Manager</h1>
+    <div class="file-manager">
+        <div class="filename-inputs">
+            <h2>File Name Segments</h2>
+            <label>
+                Segment 1:
+                <input type="text" id="segment1" placeholder="Enter Segment 1">
+            </label>
+            <label>
+                Segment 2:
+                <input type="text" id="segment2" placeholder="Enter Segment 2">
+            </label>
+            <label>
+                Segment 3:
+                <input type="text" id="segment3" placeholder="Enter Segment 3">
+            </label>
+            <label>
+                Segment 4:
+                <input type="text" id="segment4" placeholder="Enter Segment 4">
+            </label>
+            <label>
+                Segment 5:
+                <input type="text" id="segment5" placeholder="Enter Segment 5">
+            </label>
+            <label>
+                Segment 6:
+                <input type="text" id="segment6" placeholder="Enter Segment 6">
+            </label>
+            <label>
+                Segment 7:
+                <input type="text" id="segment7" placeholder="Enter Segment 7">
+            </label>
+        </div>
+        <label>
+            File Content:
+            <textarea id="file-content" placeholder="Enter file content"></textarea>
+        </label>
+        <button id="create-file">Create File</button>
+    </div>
+    <div class="file-list" id="file-list">
+        <h2>Created Files:</h2>
+        <!-- File items will be dynamically added here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
